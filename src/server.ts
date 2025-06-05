@@ -17,7 +17,7 @@ app.use(express.json());
 app.use("/api", routes);
 
 app.get("/", (_req, res) => {
-  res.send("API is running...");
+  res.send("Hello from Expense Tracker API!");
 });
 
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 5000;
